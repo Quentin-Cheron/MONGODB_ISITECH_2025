@@ -29,7 +29,7 @@ db.produits.find({ "stock.quantite": { $gt: 0 } });
 ### Trouver les produits avec au moins 3 avis, avis est un tableau
 
 ```js
-db.produits.find({ "avis.3": { $exists: true } });
+db.produits.find({ avis: { $size: 3 } });
 ```
 
 ## Exercice 3
