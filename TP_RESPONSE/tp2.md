@@ -36,7 +36,7 @@ db.produits.find({ avis: { $size: 3 } });
 
 ### Augmenter le prix de tous les produits d'une catégorie de 5%
 
-```js
+```jsf
 db.produits.updateMany({ categorie: "Électronics" }, { $inc: { prix: 0.05 } });
 ```
 
