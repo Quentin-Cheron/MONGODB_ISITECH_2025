@@ -139,3 +139,78 @@ db.livres.update(
   }
 );
 ```
+
+## Partie 4 : Suppression de documents (Delete)
+
+### 1. Supprimez un livre spécifique par son titre
+
+```js
+db.livres.deleteOne({ titre: "Livre 100" });
+```
+
+### 2. Supprimez tous les livres d'un auteur spécifique
+
+```js
+db.livres.deleteMany({ auteur: "ocogDdeKYgN7OAq" });
+```
+
+### 3. Supprimez un utilisateur par son email
+
+```js
+db.utilisateurs.deleteOne({ email: "luc.garnier@example.com" });
+```
+
+## Partie 5 : Requêtes avancées et projection
+
+### 1. Listez tous les livres triés par note moyenne (ordre décroissant)
+
+```js
+db.livres.find().sort({ note_moyenne: -1 });
+```
+
+### 2. Trouvez les 3 livres les plus anciens
+
+```js
+db.livres.find().sort({ annee_publication: 1 }).limit(3);
+```
+
+### 3. Comptez le nombre de livres par auteur
+
+```js
+db.livres.aggregate([
+  {
+    $group: {
+      _id: "$auteur",
+      nombre_livres: { $sum: 1 },
+    },
+  },
+]);
+```
+
+### 4. Affichez uniquement le titre, l'auteur et la note moyenne des livres (sans l'id)
+
+```js
+db.livres.find({}, { titre: 1, auteur: 1, note_moyenne: 1, _id: 0 });
+```
+
+### 5. Trouvez les utilisateurs qui ont emprunté plus d'un livre
+
+```js
+db.utilisateurs.find({
+  livres_empruntes: { $not: { $size: 1 } },
+});
+```
+
+### 6. Recherchez les livres dont le titre contient un mot spécifique (utilisez $regex)
+
+```js
+db.livres.find({
+  titre: { $regex: "Misérables", $options: "i" },
+});
+```
+
+### 7. Trouvez les livres dont le prix est entre 10€ et 20€
+
+```js
+db.livres.find({ $and: [{ prix: { $gte: 10 } }, { prix: { $lte: 20 } }] });
+```
