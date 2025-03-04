@@ -89,6 +89,7 @@ db.utilisateurs.update(
     $push: {
       livres_empruntes: {
         titre: "Les Misérables",
+        livre_id: ObjectId("67c6ba22a0fce5938d2c134a"),
         auteur: "Victor Hugo",
         genre: "Fantasy",
         date_ajout: new Date(),
@@ -100,6 +101,41 @@ db.utilisateurs.update(
 
 ### 5. Changez l'adresse d'un utilisateur
 
+```js
+db.utilisateurs.update(
+  {
+    _id: ObjectId("67c6ba22a0fce5938d2c134a"),
+  },
+  {
+    $set: {
+      adresse: { rue: "rue de la paix", code_postal: "75001", ville: "Paris" },
+    },
+  }
+);
+```
+
 ### 6. Ajoutez un nouveau tag à un utilisateur
 
+```js
+db.utilisateurs.update(
+  { _id: ObjectId("67c6ba22a0fce5938d2c134a") },
+  {
+    $push: {
+      tags: "Hello",
+    },
+  }
+);
+```
+
 ### 7. Mettez à jour la note moyenne d'un livre
+
+```js
+db.livres.update(
+  { _id: ObjectId("67c6b860a0fce5938d2c12e4") },
+  {
+    $set: {
+      note_moyenne: 3,
+    },
+  }
+);
+```
