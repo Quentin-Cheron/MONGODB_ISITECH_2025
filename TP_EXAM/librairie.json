@@ -1,0 +1,362 @@
+[
+    {
+        "nom": "Librairie 1",
+        "adresse": {
+            "rue": "Rue 1",
+            "ville": "Ville 1",
+            "code_postal": "750001",
+            "pays": "France",
+            "localisation": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            2.351,
+                            48.856
+                        ],
+                        [
+                            2.353,
+                            48.856
+                        ],
+                        [
+                            2.353,
+                            48.855
+                        ],
+                        [
+                            2.351,
+                            48.855
+                        ],
+                        [
+                            2.351,
+                            48.856
+                        ]
+                    ]
+                ]
+            }
+        }
+    },
+    {
+        "nom": "Librairie 2",
+        "adresse": {
+            "rue": "Rue 2",
+            "ville": "Ville 2",
+            "code_postal": "750002",
+            "pays": "France",
+            "localisation": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            2.351,
+                            48.856
+                        ],
+                        [
+                            2.353,
+                            48.856
+                        ],
+                        [
+                            2.353,
+                            48.855
+                        ],
+                        [
+                            2.351,
+                            48.855
+                        ],
+                        [
+                            2.351,
+                            48.856
+                        ]
+                    ]
+                ]
+            }
+        }
+    },
+    {
+        "nom": "Librairie 3",
+        "adresse": {
+            "rue": "Rue 3",
+            "ville": "Ville 3",
+            "code_postal": "750003",
+            "pays": "France",
+            "localisation": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            2.351,
+                            48.856
+                        ],
+                        [
+                            2.353,
+                            48.856
+                        ],
+                        [
+                            2.353,
+                            48.855
+                        ],
+                        [
+                            2.351,
+                            48.855
+                        ],
+                        [
+                            2.351,
+                            48.856
+                        ]
+                    ]
+                ]
+            }
+        }
+    },
+    {
+        "nom": "Librairie 4",
+        "adresse": {
+            "rue": "Rue 4",
+            "ville": "Ville 4",
+            "code_postal": "750004",
+            "pays": "France",
+            "localisation": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            2.351,
+                            48.856
+                        ],
+                        [
+                            2.353,
+                            48.856
+                        ],
+                        [
+                            2.353,
+                            48.855
+                        ],
+                        [
+                            2.351,
+                            48.855
+                        ],
+                        [
+                            2.351,
+                            48.856
+                        ]
+                    ]
+                ]
+            }
+        }
+    },
+    {
+        "nom": "Librairie 5",
+        "adresse": {
+            "rue": "Rue 5",
+            "ville": "Ville 5",
+            "code_postal": "750005",
+            "pays": "France",
+            "localisation": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            2.351,
+                            48.856
+                        ],
+                        [
+                            2.353,
+                            48.856
+                        ],
+                        [
+                            2.353,
+                            48.855
+                        ],
+                        [
+                            2.351,
+                            48.855
+                        ],
+                        [
+                            2.351,
+                            48.856
+                        ]
+                    ]
+                ]
+            }
+        }
+    },
+    {
+        "nom": "Librairie 6",
+        "adresse": {
+            "rue": "Rue 6",
+            "ville": "Ville 6",
+            "code_postal": "750006",
+            "pays": "France",
+            "localisation": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            2.351,
+                            48.856
+                        ],
+                        [
+                            2.353,
+                            48.856
+                        ],
+                        [
+                            2.353,
+                            48.855
+                        ],
+                        [
+                            2.351,
+                            48.855
+                        ],
+                        [
+                            2.351,
+                            48.856
+                        ]
+                    ]
+                ]
+            }
+        }
+    },
+    {
+        "nom": "Librairie 7",
+        "adresse": {
+            "rue": "Rue 7",
+            "ville": "Ville 7",
+            "code_postal": "750007",
+            "pays": "France",
+            "localisation": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            2.351,
+                            48.856
+                        ],
+                        [
+                            2.353,
+                            48.856
+                        ],
+                        [
+                            2.353,
+                            48.855
+                        ],
+                        [
+                            2.351,
+                            48.855
+                        ],
+                        [
+                            2.351,
+                            48.856
+                        ]
+                    ]
+                ]
+            }
+        }
+    },
+    {
+        "nom": "Librairie 8",
+        "adresse": {
+            "rue": "Rue 8",
+            "ville": "Ville 8",
+            "code_postal": "750008",
+            "pays": "France",
+            "localisation": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            2.351,
+                            48.856
+                        ],
+                        [
+                            2.353,
+                            48.856
+                        ],
+                        [
+                            2.353,
+                            48.855
+                        ],
+                        [
+                            2.351,
+                            48.855
+                        ],
+                        [
+                            2.351,
+                            48.856
+                        ]
+                    ]
+                ]
+            }
+        }
+    },
+    {
+        "nom": "Librairie 9",
+        "adresse": {
+            "rue": "Rue 9",
+            "ville": "Ville 9",
+            "code_postal": "750009",
+            "pays": "France",
+            "localisation": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            2.351,
+                            48.856
+                        ],
+                        [
+                            2.353,
+                            48.856
+                        ],
+                        [
+                            2.353,
+                            48.855
+                        ],
+                        [
+                            2.351,
+                            48.855
+                        ],
+                        [
+                            2.351,
+                            48.856
+                        ]
+                    ]
+                ]
+            }
+        }
+    },
+    {
+        "nom": "Librairie 10",
+        "adresse": {
+            "rue": "Rue 10",
+            "ville": "Ville 10",
+            "code_postal": "7500010",
+            "pays": "France",
+            "localisation": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            2.351,
+                            48.856
+                        ],
+                        [
+                            2.353,
+                            48.856
+                        ],
+                        [
+                            2.353,
+                            48.855
+                        ],
+                        [
+                            2.351,
+                            48.855
+                        ],
+                        [
+                            2.351,
+                            48.856
+                        ]
+                    ]
+                ]
+            }
+        }
+    }
+]

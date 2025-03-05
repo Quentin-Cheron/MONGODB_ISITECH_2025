@@ -1,0 +1,162 @@
+[
+    {
+        "nom": "Routes 1",
+        "adresse": {
+            "rue": "Rue 1",
+            "ville": "Ville 1",
+            "code_postal": "750001",
+            "pays": "France",
+            "localisation": {
+                "type": "LineString",
+                "coordinates": [
+                    -67.5377812311313,
+                    -18.51243742787682
+                ]
+            }
+        }
+    },
+    {
+        "nom": "Routes 2",
+        "adresse": {
+            "rue": "Rue 2",
+            "ville": "Ville 2",
+            "code_postal": "750002",
+            "pays": "France",
+            "localisation": {
+                "type": "LineString",
+                "coordinates": [
+                    36.90536796396215,
+                    34.94277569983454
+                ]
+            }
+        }
+    },
+    {
+        "nom": "Routes 3",
+        "adresse": {
+            "rue": "Rue 3",
+            "ville": "Ville 3",
+            "code_postal": "750003",
+            "pays": "France",
+            "localisation": {
+                "type": "LineString",
+                "coordinates": [
+                    7.895233692398278,
+                    -13.289694598708394
+                ]
+            }
+        }
+    },
+    {
+        "nom": "Routes 4",
+        "adresse": {
+            "rue": "Rue 4",
+            "ville": "Ville 4",
+            "code_postal": "750004",
+            "pays": "France",
+            "localisation": {
+                "type": "LineString",
+                "coordinates": [
+                    -74.57744939074074,
+                    -41.814281642470014
+                ]
+            }
+        }
+    },
+    {
+        "nom": "Routes 5",
+        "adresse": {
+            "rue": "Rue 5",
+            "ville": "Ville 5",
+            "code_postal": "750005",
+            "pays": "France",
+            "localisation": {
+                "type": "LineString",
+                "coordinates": [
+                    26.781684639227777,
+                    -57.33428191370441
+                ]
+            }
+        }
+    },
+    {
+        "nom": "Routes 6",
+        "adresse": {
+            "rue": "Rue 6",
+            "ville": "Ville 6",
+            "code_postal": "750006",
+            "pays": "France",
+            "localisation": {
+                "type": "LineString",
+                "coordinates": [
+                    -40.657164447310336,
+                    75.70181998899372
+                ]
+            }
+        }
+    },
+    {
+        "nom": "Routes 7",
+        "adresse": {
+            "rue": "Rue 7",
+            "ville": "Ville 7",
+            "code_postal": "750007",
+            "pays": "France",
+            "localisation": {
+                "type": "LineString",
+                "coordinates": [
+                    43.126789549438655,
+                    54.26116580566247
+                ]
+            }
+        }
+    },
+    {
+        "nom": "Routes 8",
+        "adresse": {
+            "rue": "Rue 8",
+            "ville": "Ville 8",
+            "code_postal": "750008",
+            "pays": "France",
+            "localisation": {
+                "type": "LineString",
+                "coordinates": [
+                    -85.94966139990541,
+                    8.684290444672925
+                ]
+            }
+        }
+    },
+    {
+        "nom": "Routes 9",
+        "adresse": {
+            "rue": "Rue 9",
+            "ville": "Ville 9",
+            "code_postal": "750009",
+            "pays": "France",
+            "localisation": {
+                "type": "LineString",
+                "coordinates": [
+                    20.484203645108835,
+                    41.52314184367364
+                ]
+            }
+        }
+    },
+    {
+        "nom": "Routes 10",
+        "adresse": {
+            "rue": "Rue 10",
+            "ville": "Ville 10",
+            "code_postal": "7500010",
+            "pays": "France",
+            "localisation": {
+                "type": "LineString",
+                "coordinates": [
+                    21.516567453703416,
+                    -44.67793325920468
+                ]
+            }
+        }
+    }
+]
