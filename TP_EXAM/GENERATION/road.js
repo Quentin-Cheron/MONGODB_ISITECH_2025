@@ -14,8 +14,16 @@ function generateRoads(n = 10) {
         code_postal: `75000${i + 1}`,
         pays: "France",
         localisation: {
-          type: "LineString",
-          coordinates: [Math.random() * 180 - 90, Math.random() * 180 - 90],
+          type: "Polygon",
+          coordinates: [
+            [
+              [2.351, 48.856],
+              [2.353, 48.856],
+              [2.353, 48.855],
+              [2.351, 48.855],
+              [2.351, 48.856],
+            ],
+          ],
         },
       },
     };

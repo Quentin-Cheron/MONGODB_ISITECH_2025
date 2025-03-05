@@ -276,7 +276,7 @@ db.utilisateurs.find({
 
 ```js
 db.utilisateurs.findOne({
-  perimetre: {
+  "adresse.localisation": {
     $geoIntersects: {
       $geometry: {
         type: "Point",
@@ -290,8 +290,12 @@ db.utilisateurs.findOne({
 #### 3 Créez une collection rues avec au moins une rue représentée comme un LineString GeoJSON, puis utilisez $geoIntersects pour trouver les bibliothèques dont la zone de service intersecte cette rue
 
 ```js
-db.bibliotheques.findOne({
-  perimetre: {
+db.rues.createIndex({ "adresse.localisation": "2dsphere" });
+```
+
+```js
+db.rues.findOne({
+  "adresse.localisation": {
     $geoIntersects: {
       $geometry: {
         type: "Point",
@@ -305,3 +309,64 @@ db.bibliotheques.findOne({
 ### Exercice 2.4 Cas d'utilisation métier
 
 #### 1 Créez une collection livraisons pour suivre les livraisons de livres.
+
+#### 2 Implémentez une fonction pour mettre à jour la position d'une livraison.
+
+```js
+const { MongoClient, ObjectId } = require("mongodb");
+
+// Connexion à MongoDB
+const uri = "mongodb://localhost:27017";
+const client = new MongoClient(uri);
+const dbName = "bibliotheques_amazon";
+const collectionName = "livraisons";
+
+async function updateDeliveryPosition(deliveryId, newCoordinates) {
+  try {
+    await client.connect();
+    const db = client.db(dbName);
+    const collection = db.collection(collectionName);
+
+    const result = await collection.updateOne(
+      { _id: new ObjectId(deliveryId) },
+      {
+        $set: {
+          position_actuelle: {
+            type: "Point",
+            coordinates: newCoordinates,
+          },
+        },
+      }
+    );
+
+    if (result.matchedCount === 0) {
+      console.log("Aucune livraison trouvée avec cet ID.");
+    } else {
+      console.log("Position de la livraison mise à jour !");
+    }
+  } catch (error) {
+    console.error("Erreur lors de la mise à jour :", error);
+  } finally {
+    await client.close();
+  }
+}
+
+const livraisonId = "65f123abc123456789abcdef";
+ID;
+const nouvellePosition = [2.36, 48.857];
+longitude, latitude;
+
+updateDeliveryPosition(livraisonId, nouvellePosition);
+```
+
+#### 3. Créez une requête pour trouver toutes les livraisons en cours dans un rayon de 1km autour d'un point donné.
+
+```js
+db.livraisons.find({
+  position_actuelle: {
+    $geoWithin: {
+      $centerSphere: [[48.864716, 2.349014], 1 / 6378.1],
+    },
+  },
+});
+```
