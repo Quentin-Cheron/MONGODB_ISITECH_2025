@@ -1,7 +1,7 @@
 const { ObjectId } = require("mongodb");
 const fs = require("fs");
 
-function generateUsers(n = 100000) {
+function generateUsers(n = 20000) {
   let usersArray = [];
   console.log(`Début de la génération de ${n} livres...`);
   const tags = [
@@ -15,6 +15,30 @@ function generateUsers(n = 100000) {
     "Poésie",
     "Aventure",
     "Horreur",
+  ];
+  const author = [
+    "Victor Hugo",
+    "J.K. Rowling",
+    "Stephen King",
+    "Agatha Christie",
+    "George Orwell",
+    "J.R.R. Tolkien",
+    "Albert Camus",
+    "Gustave Flaubert",
+    "Marcel Proust",
+    "Alexandre Dumas",
+  ];
+  const city = [
+    "Paris",
+    "Marseille",
+    "Lyon",
+    "Toulouse",
+    "Lille",
+    "Nantes",
+    "Rennes",
+    "Strasbourg",
+    "Montpellier",
+    "Bordeaux",
   ];
 
   for (let i = 0; i < n; i++) {
@@ -31,9 +55,26 @@ function generateUsers(n = 100000) {
       tags: tags
         .sort(() => 0.5 - Math.random())
         .slice(0, Math.floor(Math.random() * 3) + 1),
+      livres_empruntes: [
+        {
+          _id: new ObjectId(),
+          titre: `Livre ${i + 1}`,
+          auteur: author[Math.floor(Math.random() * author.length)],
+          genre: tags[Math.floor(Math.random() * tags.length)],
+          prix: Math.floor(Math.random() * 100) + 10,
+          note_moyenne: Math.floor(Math.random() * 100) + 5,
+          date_ajout: new Date(),
+          disponible: true,
+          date_emprunt: new Date(
+            new Date(2000, 0, 1).getTime() +
+              Math.random() *
+                (new Date().getTime() - new Date(2000, 0, 1).getTime())
+          ),
+        },
+      ],
       adresse: {
         rue: `Rue ${i + 1}`,
-        ville: `Ville ${i + 1}`,
+        ville: city[Math.floor(Math.random() * city.length)],
         code_postal: `75000${i + 1}`,
         pays: "France",
         localisation: {
